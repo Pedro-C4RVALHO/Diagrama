@@ -1,0 +1,24 @@
+@startuml Cliente
+class Cliente {
+    - nome: String 
+    - limite: double
+    +escolhaProduto(): void
+    +vaAteoCaixa():void
+    } 
+    Class Produto{
+       - produto: String
+       - Quantidade: int
+        -String: valor
+        +ConferirQuantidade():void
+        +CompraAprovada():void
+        +CompraNegada():void
+        +ProdutoInexistente():void
+        }
+    
+    Class Atendente {
+       - atendente: String 
+       +AjudaCliente():void
+}
+Cliente -- Produto
+Cliente -- Atendente
+
