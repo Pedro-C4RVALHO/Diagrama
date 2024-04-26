@@ -4,6 +4,9 @@ public class Produto {
     public void CompraAprovada() {}
     public void CompraNegada() {}
     public void ProdutoInexistente() {}
+    public void cadastrar(Produto produto) {
+        List<Produto> ListaDeProdutos = new ArrayList<>();
+        ListaDeProdutos.add(produto);
 
 
     
